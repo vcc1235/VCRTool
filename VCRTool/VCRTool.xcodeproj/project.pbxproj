@@ -16,6 +16,9 @@
 		B8F5C8E51FD67ACB00232A9F /* VCRToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8E41FD67ACB00232A9F /* VCRToolUITests.m */; };
 		B8F5C8F41FD67AE600232A9F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8F31FD67AE600232A9F /* TableViewController.m */; };
 		B8F5C8F61FD67B4600232A9F /* VCRTool.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8F5C8F51FD67B4600232A9F /* VCRTool.plist */; };
+		B8F5C8FE1FD67ED000232A9F /* VCRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8FA1FD67ED000232A9F /* VCRPickerView.m */; };
+		B8F5C8FF1FD67ED000232A9F /* VCRLocalXMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8FC1FD67ED000232A9F /* VCRLocalXMLParse.m */; };
+		B8F5C9001FD67ED000232A9F /* world.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8F5C8FD1FD67ED000232A9F /* world.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		B8F5C8F21FD67AE600232A9F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B8F5C8F31FD67AE600232A9F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B8F5C8F51FD67B4600232A9F /* VCRTool.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = VCRTool.plist; sourceTree = "<group>"; };
+		B8F5C8F91FD67ED000232A9F /* VCRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCRPickerView.h; sourceTree = "<group>"; };
+		B8F5C8FA1FD67ED000232A9F /* VCRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCRPickerView.m; sourceTree = "<group>"; };
+		B8F5C8FB1FD67ED000232A9F /* VCRLocalXMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCRLocalXMLParse.h; sourceTree = "<group>"; };
+		B8F5C8FC1FD67ED000232A9F /* VCRLocalXMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCRLocalXMLParse.m; sourceTree = "<group>"; };
+		B8F5C8FD1FD67ED000232A9F /* world.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +115,14 @@
 				B8F5C8C11FD67ACA00232A9F /* AppDelegate.m */,
 				B8F5C8F21FD67AE600232A9F /* TableViewController.h */,
 				B8F5C8F31FD67AE600232A9F /* TableViewController.m */,
+				B8F5C8F71FD67EA600232A9F /* XML */,
 				B8F5C8C61FD67ACA00232A9F /* Main.storyboard */,
 				B8F5C8C91FD67ACA00232A9F /* Assets.xcassets */,
 				B8F5C8CB1FD67ACA00232A9F /* LaunchScreen.storyboard */,
 				B8F5C8CE1FD67ACA00232A9F /* Info.plist */,
 				B8F5C8CF1FD67ACA00232A9F /* main.m */,
 				B8F5C8F51FD67B4600232A9F /* VCRTool.plist */,
+				B8F5C8F81FD67EB100232A9F /* Tool */,
 			);
 			path = VCRTool;
 			sourceTree = "<group>";
@@ -133,6 +143,33 @@
 				B8F5C8E61FD67ACB00232A9F /* Info.plist */,
 			);
 			path = VCRToolUITests;
+			sourceTree = "<group>";
+		};
+		B8F5C8F71FD67EA600232A9F /* XML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		B8F5C8F81FD67EB100232A9F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B8F5C9011FD67ED400232A9F /* XML */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B8F5C9011FD67ED400232A9F /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				B8F5C8FB1FD67ED000232A9F /* VCRLocalXMLParse.h */,
+				B8F5C8FC1FD67ED000232A9F /* VCRLocalXMLParse.m */,
+				B8F5C8F91FD67ED000232A9F /* VCRPickerView.h */,
+				B8F5C8FA1FD67ED000232A9F /* VCRPickerView.m */,
+				B8F5C8FD1FD67ED000232A9F /* world.xml */,
+			);
+			path = XML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F5C8F61FD67B4600232A9F /* VCRTool.plist in Resources */,
+				B8F5C9001FD67ED000232A9F /* world.xml in Resources */,
 				B8F5C8CD1FD67ACA00232A9F /* LaunchScreen.storyboard in Resources */,
 				B8F5C8CA1FD67ACA00232A9F /* Assets.xcassets in Resources */,
 				B8F5C8C81FD67ACA00232A9F /* Main.storyboard in Resources */,
@@ -271,6 +309,8 @@
 			files = (
 				B8F5C8D01FD67ACA00232A9F /* main.m in Sources */,
 				B8F5C8F41FD67AE600232A9F /* TableViewController.m in Sources */,
+				B8F5C8FF1FD67ED000232A9F /* VCRLocalXMLParse.m in Sources */,
+				B8F5C8FE1FD67ED000232A9F /* VCRPickerView.m in Sources */,
 				B8F5C8C21FD67ACA00232A9F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
