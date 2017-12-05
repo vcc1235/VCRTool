@@ -60,7 +60,16 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+     NSDictionary *dict = [self.datalist objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:[dict valueForKey:@"title"] sender:nil];
+    
+}
 
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

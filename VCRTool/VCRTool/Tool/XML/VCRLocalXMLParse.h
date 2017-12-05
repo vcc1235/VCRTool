@@ -88,7 +88,7 @@
 
 @property (nonatomic, strong,readonly) NSMutableDictionary <NSString *,VCRLocalXMLData *> *model ;
 /**
- 初始化单例
+ 初始化单例 解析XML
 
  */
 +(instancetype)startParserXML;

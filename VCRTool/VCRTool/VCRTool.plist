@@ -5,8 +5,10 @@
 	<dict>
 		<key>title</key>
 		<string>XML</string>
-		<key>viewController</key>
-		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>BrowImage</string>
 	</dict>
 </array>
 </plist>

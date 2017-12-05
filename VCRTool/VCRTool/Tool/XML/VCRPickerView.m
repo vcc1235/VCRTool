@@ -108,16 +108,15 @@
 -(void)reloadWithCountry:(VCRLocalCountry *)country{
     
     __country = country ;
-    
+    [[self pickerView]reloadAllComponents];
     if (__country.model.count == 1) {
         __countryRegion = [__country.model firstObject];
         NSArray *array = [__countryRegion.model filteredArrayUsingPredicate:[self predicateWithString:self.province]];
         if ([array count]) {
             NSInteger index = [__countryRegion.model indexOfObject:[array firstObject]];
-            [[self pickerView]reloadAllComponents];
+             [[self pickerView]reloadAllComponents];
             [self.pickerView selectRow:index+1 inComponent:0 animated:YES];
         }
-        
         return ;
     }
     NSArray *array = [country.model filteredArrayUsingPredicate:[self predicateWithString:self.province]];
@@ -126,6 +125,10 @@
         NSInteger index = [country.model indexOfObject:__countryRegion];
         [[self pickerView]reloadAllComponents];
         [[self pickerView]selectRow:index+1 inComponent:0 animated:YES];
+    }else{
+        __countryRegion = country.model.firstObject ;
+        [[self pickerView]reloadAllComponents];
+        [[self pickerView]selectRow:0 inComponent:0 animated:YES];
     }
     
     NSArray *arraya = [__countryRegion.model filteredArrayUsingPredicate:[self predicateWithString:self.country]];
@@ -135,6 +138,9 @@
         [[self pickerView]reloadAllComponents];
         [[self pickerView]selectRow:index+1 inComponent:1 animated:YES];
     }else{
+        __city = [__countryRegion.model objectAtIndex:0];
+        [[self pickerView]reloadAllComponents];
+        [[self pickerView]selectRow:0 inComponent:1 animated:YES];
         return ;
     }
     
@@ -145,9 +151,13 @@
     NSArray *arrays = [__city.model filteredArrayUsingPredicate:[self predicateWithString:self.regitry]];
     if ([arrays count]) {
         NSInteger index = [__city.model indexOfObject:[arrays firstObject]];
-        [[self pickerView]reloadAllComponents];
+//        [[self pickerView]reloadAllComponents];
         [self.pickerView selectRow:index+1 inComponent:2 animated:YES];
+    }else{
+        [self.pickerView selectRow:0 inComponent:2 animated:YES];
     }
+    
+    [self.pickerView reloadAllComponents];
 
 }
 

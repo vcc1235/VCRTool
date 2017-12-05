@@ -19,6 +19,7 @@
 		B8F5C8FE1FD67ED000232A9F /* VCRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8FA1FD67ED000232A9F /* VCRPickerView.m */; };
 		B8F5C8FF1FD67ED000232A9F /* VCRLocalXMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C8FC1FD67ED000232A9F /* VCRLocalXMLParse.m */; };
 		B8F5C9001FD67ED000232A9F /* world.xml in Resources */ = {isa = PBXBuildFile; fileRef = B8F5C8FD1FD67ED000232A9F /* world.xml */; };
+		B8F5C9041FD67F3800232A9F /* VCRPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F5C9031FD67F3800232A9F /* VCRPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		B8F5C8FB1FD67ED000232A9F /* VCRLocalXMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCRLocalXMLParse.h; sourceTree = "<group>"; };
 		B8F5C8FC1FD67ED000232A9F /* VCRLocalXMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCRLocalXMLParse.m; sourceTree = "<group>"; };
 		B8F5C8FD1FD67ED000232A9F /* world.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world.xml; sourceTree = "<group>"; };
+		B8F5C9021FD67F3800232A9F /* VCRPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCRPickerViewController.h; sourceTree = "<group>"; };
+		B8F5C9031FD67F3800232A9F /* VCRPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCRPickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 		B8F5C8F71FD67EA600232A9F /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				B8F5C9021FD67F3800232A9F /* VCRPickerViewController.h */,
+				B8F5C9031FD67F3800232A9F /* VCRPickerViewController.m */,
 			);
 			path = XML;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			files = (
 				B8F5C8D01FD67ACA00232A9F /* main.m in Sources */,
 				B8F5C8F41FD67AE600232A9F /* TableViewController.m in Sources */,
+				B8F5C9041FD67F3800232A9F /* VCRPickerViewController.m in Sources */,
 				B8F5C8FF1FD67ED000232A9F /* VCRLocalXMLParse.m in Sources */,
 				B8F5C8FE1FD67ED000232A9F /* VCRPickerView.m in Sources */,
 				B8F5C8C21FD67ACA00232A9F /* AppDelegate.m in Sources */,
