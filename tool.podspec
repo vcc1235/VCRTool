@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "VCRToolFramework"
-  s.version      = "1.0.4"
-  s.summary      = "VCC short description of VCRToolFramework."
+  s.name         = "VCRTool"
+  s.version      = "0.0.1"
+  s.summary      = "VCC short description of VCRTool"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                       hello world 
                    DESC
   s.ios.deployment_target = '8.0'
-  s.homepage     = "https://github.com/vcc1235/VCRToolFramework"
+  s.homepage     = "https://github.com/vcc1235/VCRTool"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "vcc1235" => "1041497818@qq.com" }
+  s.author             = { "vcc1235" => "vcralete@icloud.com" }
   # Or just: s.author    = "vcc1235"
   # s.authors            = { "vcc1235" => "1041497818@qq.com" }
   # s.social_media_url   = "http://twitter.com/vcc1235"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/vcc1235/VCRToolFramework.git", :tag => s.version.to_s,:submodules => true }
+  s.source       = { :git => "https://github.com/vcc1235/VCRTool.git", :tag => s.version.to_s,:submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.source_files = 'VCRToolFramework/*.h'
+  s.source_files = 'VCRTool/VCRTool/VCRTool.h'
 
     # s.public_header_files = "VCRToolFramework/VCRToolFramework.h"
 
@@ -111,33 +111,33 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage', '~>3.8'
   s.dependency 'AFNetworking', '~>3.1.0'
 
-  s.subspec 'Catorgate' do |ss|
-      ss.source_files = 'VCRToolFramework/Catorgate/*'
-  end
+  # s.subspec 'Catorgate' do |ss|
+  #     ss.source_files = 'VCRToolFramework/Catorgate/*'
+  # end
 
-  s.subspec 'BrowerImage' do |ss|
-      ss.source_files = 'VCRToolFramework/BrowerImage/*'
-      ss.dependency  "VCRToolFramework/Catorgate"
-  end
-
-  s.subspec 'XMLParse' do |ss|
-    ss.source_files = 'VCRToolFramework/XMLParse/*.{h,m}'
+  # s.subspec 'BrowerImage' do |ss|
+  #     ss.source_files = 'VCRToolFramework/BrowerImage/*'
+  #     ss.dependency  "VCRToolFramework/Catorgate"
+  # end
+ 
+  s.subspec 'LocalParse' do |ss|
+    ss.source_files = 'VCRTool/VCRTool/Tool/*'
     ss.resources = 'VCRToolFramework/XMLParse/world.xml'
     ss.public_header_files = 'VCRToolFramework/XMLParse/*.h'
   end
 
-  s.subspec 'Tool' do |ss|
-    ss.source_files = 'VCRToolFramework/Tool/*'
-    ss.dependency "VCRToolFramework/BrowerImage"
-    ss.dependency "VCRToolFramework/Catorgate"
-    ss.library   = "sqlite3.0"
-  end
+  # s.subspec 'Tool' do |ss|
+  #   ss.source_files = 'VCRToolFramework/Tool/*'
+  #   ss.dependency "VCRToolFramework/BrowerImage"
+  #   ss.dependency "VCRToolFramework/Catorgate"
+  #   ss.library   = "sqlite3.0"
+  # end
      
-  s.subspec 'Scan' do |ss|
-    ss.source_files = 'VCRToolFramework/Scan/*.{h}'
-    ss.resource = 'VCRToolFramework/Scan/CodeScan.bundle'
-    ss.vendored_libraries = ['VCRToolFramework/Scan/libVCRQR.a']
-  end
+  # s.subspec 'Scan' do |ss|
+  #   ss.source_files = 'VCRToolFramework/Scan/*.{h}'
+  #   ss.resource = 'VCRToolFramework/Scan/CodeScan.bundle'
+  #   ss.vendored_libraries = ['VCRToolFramework/Scan/libVCRQR.a']
+  # end
 
    
   
