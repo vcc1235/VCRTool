@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B85F145E200DD0E70005F16D /* VCRTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCRTool.h; sourceTree = "<group>"; };
 		B8F5C8BD1FD67ACA00232A9F /* VCRTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCRTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F5C8C01FD67ACA00232A9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8F5C8C11FD67ACA00232A9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				B8F5C8CE1FD67ACA00232A9F /* Info.plist */,
 				B8F5C8CF1FD67ACA00232A9F /* main.m */,
 				B8F5C8F51FD67B4600232A9F /* VCRTool.plist */,
+				B85F145E200DD0E70005F16D /* VCRTool.h */,
 				B8F5C8F81FD67EB100232A9F /* Tool */,
 			);
 			path = VCRTool;
