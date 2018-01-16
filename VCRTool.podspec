@@ -121,9 +121,9 @@ Pod::Spec.new do |s|
   # end
  
   s.subspec 'LocalParse' do |ss|
-    ss.source_files = 'VCRTool/VCRTool/Tool/*'
-    ss.resources = 'VCRToolFramework/XMLParse/world.xml'
-    ss.public_header_files = 'VCRToolFramework/XMLParse/*.h'
+    ss.source_files = 'VCRTool/VCRTool/Tool/*.{h,m}'
+    ss.resources = 'VCRTool/VCRTool/Tool/world.xml'
+    ss.public_header_files = 'VCRTool/VCRTool/Tool/*.h'
   end
 
   # s.subspec 'Tool' do |ss|
