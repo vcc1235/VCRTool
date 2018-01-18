@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VCRTool"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "VCC short description of VCRTool"
 
   # This description is used to generate tags and improve search results.
@@ -121,7 +121,7 @@ Pod::Spec.new do |s|
   # end
  
   s.subspec 'LocalParse' do |ss|
-    ss.source_files = 'VCRTool/**/**/VCRLocal*.{h,m}','VCRTool/**/**/VCRPicker*.{h,m}'
+    ss.source_files = 'VCRTool/**/**/VCRLocal*.{h,m}','VCRTool/**/**/VCRPickerView.{h,m}'
     ss.resources = 'VCRTool/**/**/world.xml'
     # ss.public_header_files = 'VCRTool/**/**/.h'
   end

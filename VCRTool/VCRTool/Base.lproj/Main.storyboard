@@ -4,8 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,13 +57,16 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVa-3S-oug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="-211"/>
+            <point key="canvasLocation" x="388" y="-339"/>
         </scene>
         <!--XML-->
         <scene sceneID="BJc-Ll-2Wj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ad-1y-gAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="XML" id="tYp-pT-95Q" customClass="VCRPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iBO-PW-if0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nkg-2R-dc7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VY6-do-RXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +109,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="GbX-yh-PDe"/>
                     </view>
                     <navigationItem key="navigationItem" id="AS8-DE-Obd"/>
                     <connections>
@@ -115,6 +118,7 @@
                         <outlet property="textField4" destination="PJ9-jq-ETD" id="WNY-2P-OOf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ad-1y-gAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1135" y="-322"/>
         </scene>
@@ -122,11 +126,14 @@
         <scene sceneID="Sai-hv-FGQ">
             <objects>
                 <viewController title="BrowImage" id="aqZ-Lw-574" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xML-mh-ajD"/>
+                        <viewControllerLayoutGuide type="bottom" id="XmY-PT-dNm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9xB-fW-iO4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gR8-eP-cBB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZhW-Py-Mtk"/>
                 </viewController>
