@@ -37,11 +37,7 @@ VCRLocalXMLParse *__parser ;
     
     __parser = [VCRLocalXMLParse startParserXML];
     
-    
-    
 
-    
-    
     
 }
 
