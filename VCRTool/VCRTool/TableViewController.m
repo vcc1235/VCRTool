@@ -19,14 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
-    
-    
-    
-    
-    
     NSLog(@"hello world");
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -35,7 +27,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-    NSLog(@"hello sfdsafdsafdsafds");
+    NSLog(@"hello s");
     
     self.datalist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"VCRTool" ofType:@"plist"]];
 
