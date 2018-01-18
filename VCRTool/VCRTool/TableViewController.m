@@ -29,7 +29,7 @@
     
     
     
-    NSLog(@"hello s");
+    NSLog(@"hello sfdsafds");
     
     
     self.datalist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"VCRTool" ofType:@"plist"]];
