@@ -20,7 +20,6 @@
     [super viewDidLoad];
     
     NSLog(@"hello world");
-    NSLog(@"hello world");
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,7 +30,7 @@
 
     [self.tableView reloadData];
     
-    
+    NSLog(@"hello world");
 }
 
 - (void)didReceiveMemoryWarning {
