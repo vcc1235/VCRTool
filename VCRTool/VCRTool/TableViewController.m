@@ -18,31 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"hello world");
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    
-    
-    
-    NSLog(@"hello sfdsafds");
-    
-    
     self.datalist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"VCRTool" ofType:@"plist"]];
 
     [self.tableView reloadData];
-    
-    NSLog(@"hello world");
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    NSLog(@"didReceiveMemoryWarning");
+    
 }
 
 #pragma mark - Table view data source
