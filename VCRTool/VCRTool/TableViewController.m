@@ -27,7 +27,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
+    
+    
     NSLog(@"hello s");
+    
     
     self.datalist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"VCRTool" ofType:@"plist"]];
 
